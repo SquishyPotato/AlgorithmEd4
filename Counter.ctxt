@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Counter
+comment0.text=\r\n\ \ Compilation\:\ \ javac\ Counter.java\r\n\ \ Execution\:\ \ \ \ java\ Counter\r\n\ \ Dependencies\:\ StdRandom.java\ StdOut.java\r\n\r\n\ \ %\ java\ Counter\ 6\ 600000\r\n\ \ 0\:\ 99870\r\n\ \ 1\:\ 99948\r\n\ \ 2\:\ 99738\r\n\ \ 3\:\ 100283\r\n\ \ 4\:\ 100185\r\n\ \ 5\:\ 99976\r\n\r\n
+comment1.params=id\ max
+comment1.target=Counter(java.lang.String,\ int)
+comment2.params=
+comment2.target=void\ increment()
+comment3.params=
+comment3.target=int\ value()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=that
+comment5.target=int\ compareTo(Counter)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

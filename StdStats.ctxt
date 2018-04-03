@@ -1,0 +1,88 @@
+#BlueJ class context
+comment0.target=StdStats
+comment0.text=\r\n\ \ The\ {@code\ StdStats}\ class\ provides\ static\ methods\ for\ computing\r\n\ \ statistics\ such\ as\ min,\ max,\ mean,\ sample\ standard\ deviation,\ and\r\n\ \ sample\ variance.\r\n\ \ <p>\r\n\ \ For\ additional\ documentation,\ see\r\n\ \ <a\ href\="https\://introcs.cs.princeton.edu/22library">Section\ 2.2</a>\ of\r\n\ \ <i>Computer\ Science\:\ An\ Interdisciplinary\ Approach</i>\r\n\ \ by\ Robert\ Sedgewick\ and\ Kevin\ Wayne.\r\n\r\n\ \ @author\ Robert\ Sedgewick\r\n\ \ @author\ Kevin\ Wayne\r\n
+comment1.params=
+comment1.target=StdStats()
+comment10.params=a
+comment10.target=double\ mean(int[])
+comment10.text=\r\n\ Returns\ the\ average\ value\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ average\ value\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment11.params=a
+comment11.target=double\ var(double[])
+comment11.text=\r\n\ Returns\ the\ sample\ variance\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ sample\ variance\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment12.params=a\ lo\ hi
+comment12.target=double\ var(double[],\ int,\ int)
+comment12.text=\r\n\ Returns\ the\ sample\ variance\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ sample\ variance\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment13.params=a
+comment13.target=double\ var(int[])
+comment13.text=\r\n\ Returns\ the\ sample\ variance\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ sample\ variance\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment14.params=a
+comment14.target=double\ varp(double[])
+comment14.text=\r\n\ Returns\ the\ population\ variance\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ population\ variance\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment15.params=a\ lo\ hi
+comment15.target=double\ varp(double[],\ int,\ int)
+comment15.text=\r\n\ Returns\ the\ population\ variance\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ population\ variance\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment16.params=a
+comment16.target=double\ stddev(double[])
+comment16.text=\r\n\ Returns\ the\ sample\ standard\ deviation\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ sample\ standard\ deviation\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment17.params=a
+comment17.target=double\ stddev(int[])
+comment17.text=\r\n\ Returns\ the\ sample\ standard\ deviation\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ sample\ standard\ deviation\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment18.params=a\ lo\ hi
+comment18.target=double\ stddev(double[],\ int,\ int)
+comment18.text=\r\n\ Returns\ the\ sample\ standard\ deviation\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ sample\ standard\ deviation\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment19.params=a
+comment19.target=double\ stddevp(double[])
+comment19.text=\r\n\ Returns\ the\ population\ standard\ deviation\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ population\ standard\ deviation\ in\ the\ array;\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment2.params=a
+comment2.target=double\ max(double[])
+comment2.text=\r\n\ Returns\ the\ maximum\ value\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ maximum\ value\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NEGATIVE_INFINITY}\ if\ no\ such\ value\r\n
+comment20.params=a\ lo\ hi
+comment20.target=double\ stddevp(double[],\ int,\ int)
+comment20.text=\r\n\ Returns\ the\ population\ standard\ deviation\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ population\ standard\ deviation\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment21.params=a
+comment21.target=double\ sum(double[])
+comment21.text=\r\n\ Returns\ the\ sum\ of\ all\ values\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ sum\ of\ all\ values\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ 0.0}\ if\ no\ such\ value\r\n
+comment22.params=a\ lo\ hi
+comment22.target=double\ sum(double[],\ int,\ int)
+comment22.text=\r\n\ Returns\ the\ sum\ of\ all\ values\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ sum\ of\ all\ values\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ 0.0}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment23.params=a
+comment23.target=int\ sum(int[])
+comment23.text=\r\n\ Returns\ the\ sum\ of\ all\ values\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ sum\ of\ all\ values\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ 0.0}\ if\ no\ such\ value\r\n
+comment24.params=a
+comment24.target=void\ plotPoints(double[])
+comment24.text=\r\n\ Plots\ the\ points\ (0,\ <em>a</em><sub>0</sub>),\ (1,\ <em>a</em><sub>1</sub>),\ ...,\r\n\ (<em>n</em>\u20131,\ <em>a</em><sub><em>n</em>\u20131</sub>)\ to\ standard\ draw.\r\n\r\n\ @param\ a\ the\ array\ of\ values\r\n
+comment25.params=a
+comment25.target=void\ plotLines(double[])
+comment25.text=\r\n\ Plots\ the\ line\ segments\ connecting\ \r\n\ (<em>i</em>,\ <em>a</em><sub><em>i</em></sub>)\ to\r\n\ (<em>i</em>+1,\ <em>a</em><sub><em>i</em>+1</sub>)\ for\ \r\n\ each\ <em>i</em>\ to\ standard\ draw.\r\n\r\n\ @param\ a\ the\ array\ of\ values\r\n
+comment26.params=a
+comment26.target=void\ plotBars(double[])
+comment26.text=\r\n\ Plots\ bars\ from\ (0,\ <em>a</em><sub><em>i</em></sub>)\ to\r\n\ (<em>a</em><sub><em>i</em></sub>)\ for\ each\ <em>i</em>\r\n\ to\ standard\ draw.\r\n\r\n\ @param\ a\ the\ array\ of\ values\r\n
+comment27.params=x
+comment27.target=void\ validateNotNull(java.lang.Object)
+comment28.params=lo\ hi\ length
+comment28.target=void\ validateSubarrayIndices(int,\ int,\ int)
+comment29.params=args
+comment29.target=void\ main(java.lang.String[])
+comment29.text=\r\n\ Unit\ tests\ {@code\ StdStats}.\r\n\ Convert\ command-line\ arguments\ to\ array\ of\ doubles\ and\ call\ various\ methods.\r\n\r\n\ @param\ args\ the\ command-line\ arguments\r\n
+comment3.params=a\ lo\ hi
+comment3.target=double\ max(double[],\ int,\ int)
+comment3.text=\r\n\ Returns\ the\ maximum\ value\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ \ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ \ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ maximum\ value\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NEGATIVE_INFINITY}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment4.params=a
+comment4.target=int\ max(int[])
+comment4.text=\r\n\ Returns\ the\ maximum\ value\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ maximum\ value\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Integer.MIN_VALUE}\ if\ no\ such\ value\r\n
+comment5.params=a
+comment5.target=double\ min(double[])
+comment5.text=\r\n\ Returns\ the\ minimum\ value\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ minimum\ value\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.POSITIVE_INFINITY}\ if\ no\ such\ value\r\n
+comment6.params=a\ lo\ hi
+comment6.target=double\ min(double[],\ int,\ int)
+comment6.text=\r\n\ Returns\ the\ minimum\ value\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @param\ \ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ \ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ maximum\ value\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.POSITIVE_INFINITY}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+comment7.params=a
+comment7.target=int\ min(int[])
+comment7.text=\r\n\ Returns\ the\ minimum\ value\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ minimum\ value\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Integer.MAX_VALUE}\ if\ no\ such\ value\r\n
+comment8.params=a
+comment8.target=double\ mean(double[])
+comment8.text=\r\n\ Returns\ the\ average\ value\ in\ the\ specified\ array.\r\n\r\n\ @param\ \ a\ the\ array\r\n\ @return\ the\ average\ value\ in\ the\ array\ {@code\ a[]};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n
+comment9.params=a\ lo\ hi
+comment9.target=double\ mean(double[],\ int,\ int)
+comment9.text=\r\n\ Returns\ the\ average\ value\ in\ the\ specified\ subarray.\r\n\r\n\ @param\ a\ the\ array\r\n\ @param\ lo\ the\ left\ endpoint\ of\ the\ subarray\ (inclusive)\r\n\ @param\ hi\ the\ right\ endpoint\ of\ the\ subarray\ (exclusive)\r\n\ @return\ the\ average\ value\ in\ the\ subarray\ {@code\ a[lo..hi)};\r\n\ \ \ \ \ \ \ \ \ {@code\ Double.NaN}\ if\ no\ such\ value\r\n\ @throws\ IllegalArgumentException\ if\ {@code\ a}\ is\ {@code\ null}\ \r\n\ @throws\ IllegalArgumentException\ unless\ {@code\ (0\ <\=\ lo)\ &&\ (lo\ <\ hi)\ &&\ (hi\ <\=\ a.length)}\r\n
+numComments=30
